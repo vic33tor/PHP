@@ -1,0 +1,17 @@
+Ejercicio 1
+Está utilizando el método get.
+Esto lo sabemos debido a que en la url de la página podemos ver los valores que ha enviado el usuario.
+
+
+Ejericio 4
+Tenemos el método get y el método post. Ambos métodos sirven para enviar información
+desde el lado del cliente hacia el lado del servidor, pero tienen algunas diferencias:
+
+GET
+Con el método GET, los datos que se envían al servidor se escriben en la dirección
+URL quedando visibles en el navegador lo cual lo hace poco seguro.
+
+POST
+El método POST introduce los parámetros en la solicitud HTTP para el servidor. Por ello, no
+quedan visibles para el usuario. Esto ofrece más discreción por ejemplo para el tratamiento de
+usuarios y contraseñas.

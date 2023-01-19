@@ -1,0 +1,38 @@
+
+<html>
+
+  <head>
+
+        <script>  
+        
+           // Funcion donde validamos los campos del formulario en el cliente.
+           function validarform(){  
+              var nombre=document.myform.nombre.value;  
+              var password=document.myform.password.value;  
+  
+             if (nombre==null || nombre==""){  
+                   alert("El campo nombre no puede ir en blanco");  
+                   return false;  
+             }else if(password.length<6){  
+                   alert("La password debe contener 6 caracteres");  
+                   return false;  
+             } 
+             // Si valida todos los campos devuelve true y llama al servidor. 
+           }  
+           
+      </script>  
+
+</head>
+
+<body>  
+     <form name="myform" method="post" action="validado.php" onsubmit="return validarform()" >  
+     
+                Nombre: <input type="text" name="nombre"><br/>  
+                Password: <input type="password" name="password">  (6 caracteres)<br/>  
+                
+               <input type="submit" value="enviar">  
+               
+     </form>  
+     
+</body>
+</html>

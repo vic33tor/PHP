@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+function addNota(){
+            
+
+        var input = document.createElement("input");
+        input.type="text"
+        input.name="lista[]"
+        document.getElementById('notas').appendChild(input);
+}
+</script>
+
+
+</head>
+
+<body>
+<div>
+    <h3>Notas</h3>
+    <form action="Arrays_Ej14.php" id="myform" method="post">
+    <div>
+        <div><input type="button" id="nota" onClick="addNota()" value="+" /></div>
+    </div>
+    <div id="notas"><input type="text" name="lista[]"/></div>
+    <input type="submit" value="enviar">  
+    </form>
+</div>
+
+</body>
+</html>

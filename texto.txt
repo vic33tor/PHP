@@ -1,0 +1,56 @@
+GET VS POST
+Son los dos métodos más importantes de los que nos provee el protocolo HTTP para hacer
+peticiones y tratar la información. Ambos métodos sirven para lo mismo, enviar información
+desde el lado del cliente hacia el lado del servidor, pero tienen algunas diferencias:
+
+GET
+Con el método GET, los datos que se envían al servidor se escriben en la misma dirección
+URL, quedando visibles incluso en la ventana del navegador.
+
+Ejemplo:
+www.ejemplo.com/registrarse.php?nombre=pedro&amp;apellido=perez&amp;edad=55&amp
+;genero=hombre
+
+Toda la información introducida por el usuario (los llamados “parámetros URL”) se
+transmiten abiertamente en esta URL.
+
+POST
+El método POST introduce los parámetros en la solicitud HTTP para el servidor. Por ello, no
+quedan visibles para el usuario. Esto ofrece más discreción por ejemplo para el tratamiento de
+usuarios y contraseñas.
+
+
+
+LENGUAJE DEL LADO DEL SERVIDOR VS LENGUAJE DEL LADO CLIENTE
+
+LENGUAJE DEL LADO SERVIDOR
+Se conoce como lenguaje del lado del servidor a aquel que se ejecuta en el servidor web,
+inmediatamente antes de que el sitio web se envíe a través de Internet al usuario. Los sitios web
+que se ejecutan en el servidor pueden realizar un amplio abanico de tareas hasta formar el
+propio sitio web que va a ver el usuario: acceso a base de datos, conexión en red...
+
+Ejemplo:
+-PHP
+-PERL
+-CGI
+-Java server pages
+
+
+LENGUAJE DEL LADO DEL CLIENTE
+Los lenguajes de programación del lado del cliente se utilizan para integrarse en sitios web; un
+determinado código escrito en un lenguaje de Script se incorpora de forma directa dentro de un
+código HTML y se ejecuta interpretado.
+
+Ejemplo:
+-HTML
+-JavaScript
+-CSS
+
+
+CONCLUSIONES
+Así pues, podemos hablar de lenguajes de lado servidor que son aquellos lenguajes que son
+reconocidos, ejecutados e interpretados por el propio servidor y que se envían al cliente en un
+formato comprensible para él. Por otro lado, los lenguajes de lado cliente (entre los cuales no
+sólo se encuentra el HTML sino también el Java y el JavaScript los cuales son simplemente
+incluidos en el código HTML) son aquellos que pueden ser directamente "digeridos" por el
+navegador y no necesitan un pretratamiento.
