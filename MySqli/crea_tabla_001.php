@@ -12,4 +12,14 @@ if ($conn->connect_error) {
 }
 
 echo "Conexión correcta"."<br>";
+
+$sql = "CREATE TABLE usuario 
+                    (ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+                     nombre VARCHAR(50) NOT NULL,
+                     mail VARCHAR(100) NOT NULL)
+                     ENGINE=InnoDB";
+
+$conn->query($sql);
+if($conn->errno) die($conn->error);
+$conn->close();
 ?>
